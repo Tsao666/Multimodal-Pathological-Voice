@@ -21,7 +21,7 @@
 
 ## Training
 
-模型架構如下圖，將音訊特徵與病歷資料各自經過 `Dense` 後 `concat` 起來做分類
+參考[beats-dense.ipynb](beats-dense.ipynb)，模型架構如下圖，將音訊特徵與病歷資料各自經過 `Dense` 後 `concat` 起來做分類
 ![](assets/model.png)
 
 訓練資料為 90% 資料量，其餘 10% 會在訓練階段以 `accuracy` 評估指標挑選最佳模型權重；訓練階段也會根據類別數量計算對應 `class weight`，提高資料量少的類別權重
